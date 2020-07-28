@@ -221,8 +221,16 @@ legend,
 .appFooter{
   width: 100%;
 }
+/* 공통 헤더 */
 .appHeader{
   background-color: silver;
+  display: grid;
+}
+/* 공통 멤버링크 */
+.memberOnly{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 /* 공통 네비게이션 */
 .appNavigation{
