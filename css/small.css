@@ -1,0 +1,29 @@
+/* 모바일 기본 글자 크기 */
+body{
+  font-size: 1.5rem;
+  background-color:pink;
+}
+/* 모바일 레이아웃 */
+/* 모바일 헤더 */
+.appHeader{
+  width: 100%;
+}
+.appHeader,.appMain,.appFooter{
+  width: 100%;
+}
+/* 모바일 네비게이션 */
+.appNavigation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  /* 모바일 할때 vw,vh단위를 많이쓴다. */
+  transform: translateX(-100%);
+  /* transform 속성이 left:-100%보다 랜더링시 효율이좋다. */
+}
+/* 모바일 메인 컨텐츠 */
+.appMain{
+  width: 100%;
+}
+/* 모바일 푸터 */
