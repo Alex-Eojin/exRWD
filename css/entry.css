@@ -1,6 +1,7 @@
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 html {
   line-height: 1.15;
+  /* 노멀라이즈 css코드 */
   -webkit-text-size-adjust: 100%;
 }
 body {
@@ -145,6 +146,7 @@ template {
 [hidden] {
   display: none;
 }
+/* 초기화 */
 .resetMargin {
   margin: 0;
 }
@@ -158,22 +160,27 @@ template {
   padding: 0;
   margin: 0;
 }
+/* 초기화한 클래스 모듈 */
 html {
   font-size: 10px;
+  /* rem 이라서 10px을 줌. */
 }
 body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
   color: #181818;
   background-color: #fff;
+  /* 바디태그 안에는 모바일과 데스크탑의 폰트 사이즈를 다르게 하려고 html 과 다르게함 */
 }
 a {
   color: inherit;
+  /* 부모가 가진 거 상속받게함 */
   text-decoration: none;
 }
 a:hover,
 a:focus {
   color: #f00;
+  /* 호버 뿐아니라 포커스까지 색갈을 바꿔준다. 스크린 리더를 위해서 */
 }
 .menu__link {
   font-size: 1.6rem;
