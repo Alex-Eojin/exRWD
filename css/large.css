@@ -7,7 +7,7 @@ body {
   justify-content: center;
 }
 .appHeader,
-.appMain {
+.appMain, .menu__list {
   width: 1000px;
 }
 .appNavigation {
@@ -42,4 +42,72 @@ body {
   padding: 2px 10px;
   background-color: #988574;
   color: #fff;
+}
+/* 데스크탑 네비게이션 */
+.appNavigation{
+  background-color: #988574;
+  box-shadow: 0 -2px -2px 0 #ccc, 0 2px 2px 0 #ccc;
+}
+.buttonBurer{
+  display: none;
+}
+.menu__list{
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  color: #fff;
+}
+.menu__subMenu{
+  padding-left: 18px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.menu__subMenu li{
+  margin-bottom: 15px;
+}
+.menu__subMenu li a{
+  color: #fff;
+  padding-left: 10px;
+}
+.menu__link{
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+.menu__link::before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  background: url(./images/sprite_header.png) no-repeat;
+}
+/* 데스크탑 메인컨텐츠 */
+.appMain{
+  display: grid;
+  grid-template: repeat(2, 25vh)/ repeat(12, 1fr);
+  grid-gap: 20px;
+}
+.book{
+  grid-area: 1/1/2/span 4;
+  background-color: yellow;
+}
+.news{
+  grid-area: 1/5/2/span 8;
+  background-color: pink;
+}
+.board{
+  grid-area: 2/1/3/span 4;
+  background-color: skyblue;
+}
+.favorit{
+  grid-area: 2/10/3/span 3;
+  background-color: skyblue;
+}
+.twitter{
+  grid-area: 2/5/3/span 5;
+  background-color: violet;
 }

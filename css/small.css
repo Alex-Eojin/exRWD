@@ -51,7 +51,41 @@ input[type="search"] {
 }
 
 /* 모바일 내비게이션 */
-.appNavigation {
+/* 모바일 메뉴 제어 버튼 */
+.container{
+  position: relative;
+}
+.buttonBurger{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 47px;
+  right: 10px;
+  overflow: hidden;
+  transition: all 2000ms ease-in-out;
+}
+.burgerBar{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+}
+.round{
+  border-radius: 3px;
+}
+.positionTop{
+  top: 0;
+}
+.positionMiddle{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.positionBottom{
+  top: 100%;
+  transform: translateY(-100%);
+}
+.menu__list{
   position: fixed;
   top: 0;
   left: 0;
@@ -59,8 +93,26 @@ input[type="search"] {
   height: 100vh;
   transform: translateX(-100%);
 }
+.isAct .positionTop{
+  transform: translateY(-50%) rotate(45deg);
+  top: 50%;
+}
+.isAct .positionMiddle{
+  transform: translateY(-50%) translateX(-100%);
+}
+.isAct .positionBottom{
+  transform: translateY(-50%) rotate(-45deg);
+  top: 50%;
+}
 /* 모바일 메인 콘텐츠 */
 .appMain {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 20px;
+}
+.book, .news, .board,.favorit,.twitter{
+  width: 100%;
+  height: 10vh;
 }
 /* 모바일 푸터 */
 .appFooter {
