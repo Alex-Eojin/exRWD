@@ -2,13 +2,15 @@
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <!-- 각각의 디바이스를 자신의 뷰포트 값으로 설정달라고한것. / initial-scale=1.0은 시작 1배. max는 최대 몇배. 더 확대하면 깨지므로 못하게함. 확대 축소도 허용하게 함 정하지 않았으므로 -->
+  <link rel="stylesheet" href="grid.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/small.css" media="screen and (min-width: 320px) and (max-width: 999px)">
   <!-- 나중에 다 번들 해서 서비스 해야하므로 유지/보수면에서는 작업할때 분할하지만 나중엔 다 합쳐야한다-->
   <link rel="stylesheet" href="./css/large.css" media="screen and (min-width: 1000px)">
   <title>반응형 - 웹카페</title>
+  <script src="./js/grid.js"></script>
 </head>
 <body>
   <div class="container">
@@ -35,6 +37,20 @@
     <nav class="appNavigation">내비게이션</nav>
     <main class="appMain">메인 컨텐츠</main>
     <footer class="appFooter">푸터</footer>
+  </div>
+  <div class="gridSystem">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 </body>
 </html>
