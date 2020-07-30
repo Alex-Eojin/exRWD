@@ -62,7 +62,7 @@ body {
 .menu__subMenu{
   padding-left: 18px;
   margin-top: 15px;
-  color: #fff;
+  color: #fff;ㄷ
   font-size: 1.6rem;
 }
 .menu__subMenu li{
@@ -76,14 +76,6 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
-}
-.menu__link::before{
-  content: '';
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 8px;
-  background: url(./images/sprite_header.png) no-repeat;
 }
 /* 데스크탑 메인컨텐츠 */
 .appMain{

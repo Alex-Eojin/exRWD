@@ -85,14 +85,6 @@ input[type="search"] {
   top: 100%;
   transform: translateY(-100%);
 }
-.menu__list{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 70vw;
-  height: 100vh;
-  transform: translateX(-100%);
-}
 .isAct .positionTop{
   transform: translateY(-50%) rotate(45deg);
   top: 50%;
@@ -103,6 +95,52 @@ input[type="search"] {
 .isAct .positionBottom{
   transform: translateY(-50%) rotate(-45deg);
   top: 50%;
+}
+.menu__list{
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  background-color: rgba(102, 051, 000, 0.2);
+  backdrop-filter: blur(3px);
+  transform: translateX(-105%);
+  color: #fff;
+  padding: 20px;
+}
+
+.isAct .menu__list{
+  transform: none;
+}
+/* .menu__item{
+  display: flex;
+  flex-flow: row wrap;
+} */
+/* .menu__item::before{
+} */
+.menu__link{
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100 - 1.5em);
+}
+.menuAct .menu__subMenu{
+  display: block;
+}
+.menu__subMenu{
+  font-size: 1.6rem;
+  display: none;
+  width: 100%;
+}
+.menu__subMenu li{
+  margin: 10px 0;
+}
+.menu__subMenu a{
+  display: block;
+  padding: 5px 0;
 }
 /* 모바일 메인 콘텐츠 */
 .appMain {

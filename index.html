@@ -10,7 +10,8 @@
   <!-- 나중에 다 번들 해서 서비스 해야하므로 유지/보수면에서는 작업할때 분할하지만 나중엔 다 합쳐야한다-->
   <link rel="stylesheet" href="./css/large.css" media="screen and (min-width: 1000px)">
   <title>반응형 - 웹카페</title>
-  <script src="./js/grid.js"></script>
+  <script src="./js/grid.js" defer></script>
+  <script src="js/app.js" defr></script>
 </head>
 <body>
   <div class="container">
@@ -34,7 +35,7 @@
         </fieldset>
       </form>
     </header>
-    <nav class="appNavigation menu isAct">
+    <nav class="appNavigation menu">
       <h2 class="a11yHidden">메인 메뉴</h2>
       <button class="buttonNone buttonBurger" aria-label="메뉴 열기">
         <span class="burgerBar round positionTop"></span>
@@ -42,7 +43,7 @@
         <span class="burgerBar round positionBottom"></span>
       </button>
       <ul class="menu__list resetList">
-        <li class="menu__item">
+        <li class="menu__item menuAct">
           <a href="#" class="menu__link">HTML에 대해</a>
           <ul class="menu__subMenu">
             <li><a href="#">HTML5 소개</a></li>
