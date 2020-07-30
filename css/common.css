@@ -278,6 +278,11 @@ legend,
   flex-flow: column nowrap;
   align-items: center;
 }
+/* 공통 반응형 컨텐츠 */
+.responsive{
+  max-width: 100%;
+  height: auto;
+}
 /* 공통 레이아웃 */
 .container{
   display: flex;
@@ -310,10 +315,87 @@ input[type='search'] {
   background-color: purple;
 }
 /* 공통 메인 컨텐츠 */
-.appMain{
-  background-color: lime;
+.appMain h2[class*='__title']{
+  padding-left: 65px;
+  position: relative;
+  margin: 0;
+  font-size: 1.6rem;
+}
+.sprite{
+  background-image: url(./images/sprite_main.png);
+  background-repeat: no-repeat;
+  min-height: 60px;
+}
+/* .sprite::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 59px;
+  background-image: url(./images/sprite_main.png);
+  background-repeat: no-repeat;
+} */
+.appMain [class*='__enTitle']{
+  display: block;
+  margin-top: 5px;
+}
+.spriteNews{
+  background-position: 0 -115px;
+}
+.spriteBoard{
+  background-position: 0 -230px;
+}
+.spriteFavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
+.themeGreen{
+  color: #acd372;  
+}
+.themeYellow{
+  color: #c7b299;
+}
+.themeBrown{
+  color: #d1ac2a;
+}
+.themeOrange{
+  color: #f09333;
+}
+.themeSkyblue{
+  color: #44aded;
+}
+.appMain [class*="__summary"] {
+  line-height: 1.5;
+}
+/* 공통 추천 서적 */
+.book__cover {
+  margin: 15px 20px;
+  text-align: center;
+}
+.book__cover figcaption {
+  margin: 10px 0;
+}
+.book__info {
+  margin: 15px 0;
+  text-align: center;
+}
+.book__info * {
+  display: inline-block;
+}
+.book__info dt {
+}
+.book__info dd {
+  margin-left: 0;
+}
+.book__info dd[aria-label] {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 /* 공통 푸터 */
-.appFooter{
+.appFooter {
   background-color: orange;
 }

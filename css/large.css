@@ -62,7 +62,7 @@ body {
 .menu__subMenu{
   padding-left: 18px;
   margin-top: 15px;
-  color: #fff;ㄷ
+  color: #fff;
   font-size: 1.6rem;
 }
 .menu__subMenu li{
@@ -80,26 +80,27 @@ body {
 /* 데스크탑 메인컨텐츠 */
 .appMain{
   display: grid;
-  grid-template: repeat(2, 25vh)/ repeat(12, 1fr);
+  grid-template: auto / repeat(12, 1fr);
   grid-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .book{
   grid-area: 1/1/2/span 4;
-  background-color: yellow;
+}
+.book__cover{
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .news{
   grid-area: 1/5/2/span 8;
-  background-color: pink;
 }
 .board{
   grid-area: 2/1/3/span 4;
-  background-color: skyblue;
 }
 .favorit{
   grid-area: 2/10/3/span 3;
-  background-color: skyblue;
 }
 .twitter{
   grid-area: 2/5/3/span 5;
-  background-color: violet;
 }
