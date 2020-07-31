@@ -340,10 +340,10 @@ input[type='search'] {
   display: block;
   margin-top: 5px;
 }
-.spriteNews{
+.spriteBoard{
   background-position: 0 -115px;
 }
-.spriteBoard{
+.spriteNews{
   background-position: 0 -230px;
 }
 .spriteFavorite{
@@ -356,10 +356,10 @@ input[type='search'] {
   color: #acd372;  
 }
 .themeYellow{
-  color: #c7b299;
+  color: #d1ac2a;
 }
 .themeBrown{
-  color: #d1ac2a;
+  color: #c7b299;
 }
 .themeOrange{
   color: #f09333;
@@ -395,6 +395,64 @@ input[type='search'] {
   font-size: 2.5rem;
   font-weight: 700;
 }
+/* 공통 새소식 */
+.news{
+}
+.news__videoContainer{
+  margin: 15px 20px;
+}
+video.responsive{
+  width: 100%;
+}
+/* .news__date{
+  float: right;
+} */
+.news__date{
+  display: block;
+  text-align: right;
+  margin: 1em 0;
+}
+.iframe4To3{
+  padding-top:75%;
+}
+.iframe16To9{
+  position:   relative;
+  width:100%;
+  height: 0 !important;
+  /* 우선순위가 높아짐 다른곳에서 순위가 높아질떄를 대비해서 */
+  padding-top:56.25%;
+}
+.iframe21To9{
+  padding-top: 42.85%;
+}
+.iframe{
+  position: absolute;
+  top:      0;
+  left:     0;
+  bottom:   0;
+  right:    0;
+  width:    100%;
+  height:   100%
+}
+/* 공통 게시판 */
+.board__list{
+  list-style: none;
+}
+.board__list a{
+  display: inline-block;
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__list time{
+  float: right;
+}
+.icon-star:not(:last-child){
+  margin-bottom: 20px;
+}
+/* 공통 트위터 */
+/* 공통 인기 사이트 */
 /* 공통 푸터 */
 .appFooter {
   background-color: orange;
