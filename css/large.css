@@ -9,6 +9,10 @@ body {
 .appHeader,
 .appMain, .menu__list {
   width: 1000px;
+  width: 78.125%;
+    /* t / c = r */
+  min-width: 1000px;
+  max-width: 1800px;
 }
 .appNavigation {
   width: 100%;

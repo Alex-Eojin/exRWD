@@ -418,9 +418,9 @@ video.responsive{
 .iframe16To9{
   position:   relative;
   width:100%;
+  padding-top:56.25%;
   height: 0 !important;
   /* 우선순위가 높아짐 다른곳에서 순위가 높아질떄를 대비해서 */
-  padding-top:56.25%;
 }
 .iframe21To9{
   padding-top: 42.85%;
@@ -435,24 +435,101 @@ video.responsive{
   height:   100%
 }
 /* 공통 게시판 */
+.board{
+  position: relative;
+}
 .board__list{
   list-style: none;
+  padding-left: 30px;
+}
+.board__list li{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.board__list li:not(:last-child){
+  margin-bottom: 20px;
 }
 .board__list a{
-  display: inline-block;
-  width: 60%;
+  /* width: calc(100% - 8em); */
+  flex-grow: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: left;
 }
-.board__list time{
-  float: right;
+.board__more{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.icon-star:not(:last-child){
-  margin-bottom: 20px;
+/* 공통 인기 사이트 */
+.favorite__list{
+  counter-reset: favorite;
+  padding-left: 40px;
+}
+.favorite__list li{
+  margin-bottom: 15px;
+}
+.favorite__list a::before{
+  content: '';  
+  display: inline-block;
+  counter-increment: favorite;
+  content: counter(favorite);
+  background-color: #f09333;
+  padding: 10px 15px;
+  border-radius: 999px;
+  color: #fff;
+  margin-right: 5px;
+}
+.favorite__list a{
+  position: relative;
+  font-size: 1.4rem;
+}
+.favorite__list a:hover::after,.favorite__list a:focus::after{
+  content: attr(data-tooltip);
+  background-color: #f09333;
+  padding: 10px 15px;
+  color: #fff;
+
+  position: absolute;
+  top: 2em;
+  left: 70%;
+  z-index: 100;
+
+  white-space: nowrap;
+  border-radius: 3px;
+  box-shadow: 4px 3px 1px #181818;
 }
 /* 공통 트위터 */
-/* 공통 인기 사이트 */
+.twitter__container{
+  position: relative;
+  padding-right: 150px;
+}
+.twitter__userInfo dd,dt{
+  padding: 0;
+  margin: 0;
+}
+.twitter__userName{
+  display: inline-block;
+}
+.twitter__userId{
+  display: inline-block;
+}
+.twitter__userProfile{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+.circlePhoto{
+  max-width: 70%;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid #181818;
+  padding: 5px;
+}
 /* 공통 푸터 */
 .appFooter {
   background-color: orange;
