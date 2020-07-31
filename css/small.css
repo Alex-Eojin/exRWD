@@ -155,6 +155,20 @@ input[type="search"] {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+/* 공통 트위터 */
+.twitter__userProfile{
+  text-align: right;
+}
+
 /* 모바일 푸터 */
-.appFooter {
+.appFooter{
+  padding-left: 15px;
+  line-height: 1.5;
+}
+.address,.copyright{
+  text-align: left;
+}
+.address span{
+  display: block;
+  margin-top: 7px;
 }

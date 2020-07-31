@@ -108,3 +108,15 @@ body {
 .twitter{
   grid-area: 2/5/3/span 5;
 }
+/* 데스크탑 푸터 */
+.appFooter{
+  text-align: center;
+}
+.address,.copyright{
+  display: block;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.copyright{
+}
